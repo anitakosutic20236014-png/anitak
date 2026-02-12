@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+
+.gif-container {
+  width: 300px;   /* veličina slike */
+  height: 300px;
+  position: relative;  /* bitno za preklapanje slika */
+}
+
+.gif-container img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#idle { display: block; }
+#forward { display: none; }

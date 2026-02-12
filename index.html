@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pocetna</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<div class="gif-container">
+  <img src="idle.png" id="idle" alt="Idle PNG">
+  <img src="forward.gif" id="forward" alt="Forward GIF">
+</div>
+<script>
+const idle = document.getElementById("idle");
+const forward = document.getElementById("forward");
+const gifDuration = 1000; 
+
+window.addEventListener("pageshow", () => {
+  idle.style.display = "block";
+  forward.style.display = "none";
+  forward.src = "forward.gif"; 
+});
+
+idle.addEventListener("click", () => {
+  idle.style.display = "none";
+  forward.src = "forward.gif?" + new Date().getTime(); 
+  forward.style.display = "block";
+
+  setTimeout(() => {
+    window.location.href = "druga stranica.html";
+  }, gifDuration);
+});
+</script>
+ 
+
+</body>
+</html>

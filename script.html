@@ -1,0 +1,32 @@
+<script>
+const box = document.getElementById("box");
+
+const idle = box.querySelector(".idle");
+const forward = box.querySelector(".forward");
+const reverse = box.querySelector(".reverse");
+
+const forwardSrc = forward.src;
+const reverseSrc = reverse.src;
+
+box.addEventListener("mouseenter", () => {
+  idle.style.display = "none";
+  reverse.style.display = "none";
+
+  forward.src = "";              // reset GIF
+  forward.src = forwardSrc;      // krene od početka
+  forward.style.display = "block";
+});
+
+box.addEventListener("mouseleave", () => {
+  forward.style.display = "none";
+
+  reverse.src = "";              // reset reverse GIF
+  reverse.src = reverseSrc;
+  reverse.style.display = "block";
+
+  setTimeout(() => {
+    reverse.style.display = "none";
+    idle.style.display = "block";
+  }, 1000); // ⬅ trajanje reverse GIF-a (u ms)
+});
+</script>

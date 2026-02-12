@@ -1,0 +1,52 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  background-color: #F7F7F7;
+  position: relative;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0; 
+  background-image: url("pozadina.svg"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.03; 
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;       
+  position: relative; 
+  z-index: 1;      
+  width: 100%;
+  height: 100%;    
+}
+
+/* Tri mala SVG-a */
+.svg-container img {
+  width: 100px;  
+  height: auto;  
+}
+
+.svg-container a:first-child img {
+  width: 125px; 
+}
+.svg-container img:hover {
+  transform: scale(1.2); 
+}
