@@ -56,3 +56,45 @@ body::before {
   left: 100px;                     
   width: 600px;
 }
+
+.top-menu {
+  position: fixed;
+  top: 35px;
+  right: 40px;
+  display: flex;
+  align-items: center;      
+  gap: 25px;
+  z-index: 1000;
+}
+
+.top-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+
+.home-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.work-icon {
+  width: 29px;
+  height: 29px;
+}
+
+.kontakt-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.top-menu img {
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.top-menu img:hover {
+  transform: scale(1.1);
+}
