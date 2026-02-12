@@ -9,9 +9,9 @@ body {
 }
 
 .gif-container {
-  width: 300px;   /* veličina slike */
+  width: 300px;   
   height: 300px;
-  position: relative;  /* bitno za preklapanje slika */
+  position: relative;  
 }
 
 .gif-container img {
@@ -24,3 +24,13 @@ body {
 
 #idle { display: block; }
 #forward { display: none; }
+
+#idle {
+  cursor: pointer;                 
+  transition: transform 0.2s ease; 
+}
+
+#idle:hover {
+  transform: scale(1.05);         
+}
+
