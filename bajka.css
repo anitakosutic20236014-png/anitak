@@ -1,7 +1,5 @@
 
 body {
-  background-color: ;
-  overflow-x: hidden;
   margin: 0;
 }
 
@@ -12,7 +10,6 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: url("work.svg");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.03;
@@ -26,7 +23,7 @@ img {
 }
 
 h1 {
-  font-family: Arial, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 40px;
   color: black;
   margin: 20;
@@ -68,13 +65,6 @@ h1 {
   z-index: 1000;
 }
 
-.top-menu a {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-}
-
-
 .home-icon {
   width: 20px;
   height: 20px;
@@ -91,7 +81,6 @@ h1 {
 }
 
 .top-menu img {
-  display: block;
   object-fit: contain;
   transition: transform 0.3s ease;
 }

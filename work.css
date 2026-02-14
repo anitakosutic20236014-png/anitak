@@ -1,5 +1,4 @@
 body {
-	overflow-x: hidden;
 	margin: 0;
 }
 
@@ -8,15 +7,13 @@ body::before {
   position: fixed;
   inset: 0; 
   background-image: url("work.svg"); 
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.03; 
-  pointer-events: none; 
-  z-index: -1; 
-
-
+  z-index: -1;
+  pointer-events: none;
 }
+
 header {
 	position: sticky;
 	display: grid;
@@ -24,8 +21,6 @@ header {
 	margin: 0;
 	padding-top: 15px;
 	grid-template-columns: auto auto;
-	
-
 }
 
 #naslov {
@@ -33,67 +28,18 @@ header {
 	margin-left: 20px;
 	padding-bottom: 15px;
 }
+
 h1 {
-	font-family: Arial, sans-serif;
+	font-family: Poppins, sans-serif;
 	font-size: 40px;
 	color: black;
 	margin: 20px;
 	padding-bottom: 15px;
 }
 
-#meni {
-	justify-self: end;
-	margin-right: 20px;
-}
-
-p {
-
-    font-family: Arial, sans-serif;
-	font-size: 20px;
-	color: white;
-	margin: 0;
-}
-
-a {
-	color: white;
-	text-decoration: none;
-
-}
-
-a:hover {
-	color: grey;
-}
-
 img {
 	width: 500px;
 }
-
-h2 {
-	font-family: Arial, sans-serif;
-	font-weight: 500;
-	font-size: 20px;
-	color: white;
-	margin: 0;
-	padding-top: 10px;
-	padding-bottom: 15px;
-}
-
-
-
-
-img {
-  width: 500px;
-}
-
-h1 {
-  font-family: Poppins, sans-serif;
-  font-size: 40px;
-  color: black;
-  margin: 20px;
-  padding-bottom: 15px;
-}
-
-
 
 #projekti {
   display: flex;             
@@ -102,16 +48,14 @@ h1 {
   gap: 40px;                 
 }
 
-
 .projekat {
   width: 100%;               
   display: flex;
   justify-content: center;   
 }
 
-
 .projekat img {
-  width: 80%;               
+  width: 100%;               
   max-width: 600px;         
   height: auto;            
   object-fit: contain;       
@@ -127,13 +71,6 @@ h1 {
   gap: 25px;
   z-index: 1000;
 }
-
-.top-menu a {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-}
-
 
 .home-icon {
   width: 20px;
@@ -151,7 +88,6 @@ h1 {
 }
 
 .top-menu img {
-  display: block;
   object-fit: contain;
   transition: transform 0.3s ease;
 }

@@ -22,8 +22,6 @@ body {
   object-fit: contain;
 }
 
-#idle { display: block; }
-#forward { display: none; }
 
 #idle {
   cursor: pointer;                 

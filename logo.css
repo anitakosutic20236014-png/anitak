@@ -1,7 +1,5 @@
 
 body {
-  background-color: ;
-  overflow-x: hidden;
   margin: 0;
 }
 
@@ -11,7 +9,6 @@ body::before {
   position: fixed;
   inset: 0;
   background-image: url("work.svg");
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.03;
@@ -42,27 +39,16 @@ h1 {
   margin-bottom: 70px;
 }
 
-/
 .projekat:last-child {
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
-
 .projekat img {
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   height: auto;
   object-fit: contain;
   transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-
-h2 {
-  margin: 0;
-}
-
-img {
-  display: block;
 }
 
  .top-menu {
@@ -74,13 +60,6 @@ img {
   gap: 25px;
   z-index: 1000;
 }
-
-.top-menu a {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-}
-
 
 .home-icon {
   width: 20px;
@@ -98,7 +77,6 @@ img {
 }
 
 .top-menu img {
-  display: block;
   object-fit: contain;
   transition: transform 0.3s ease;
 }

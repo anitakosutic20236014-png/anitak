@@ -6,19 +6,11 @@ html, body {
   height: 100%;
 }
 
-
-body {
-  background-color: #F7F7F7;
-  position: relative;
-}
-
-
 body::before {
   content: "";
   position: fixed;
   inset: 0; 
   background-image: url("pozadina.svg"); 
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   opacity: 0.03; 
@@ -38,7 +30,6 @@ body::before {
   height: 100%;    
 }
 
-/* Tri mala SVG-a */
 .svg-container img {
   width: 100px;  
   height: auto;  
